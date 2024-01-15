@@ -45,6 +45,13 @@ function showPage(pageId) {
             <a id="pro-a" href="https://fintech-app-8y8f.vercel.app/">View Project</a>
             </div>
             </li>
+            <li>
+            <div>
+            <h1>Weather App</h1>
+            <image id="pro-img" src="images/weather.jpg"/><br>
+            <a id="pro-a" href="https://ridwantajudeen.github.io/weather-app/">View Project</a>
+            </div>
+            </li>
           </ul>
         </div>`;
     } else if (pageId === 'page2') {
@@ -84,3 +91,5 @@ document.getElementById('hireButton').addEventListener('click', function () {
   var mailtoLink = 'mailto:' + email + '?subject=' + subject + '&body=' + body;
   window.location.href = mailtoLink;
 });
+
+// make it show each city's local time instead
