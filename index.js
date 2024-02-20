@@ -92,4 +92,5 @@ document.getElementById('hireButton').addEventListener('click', function () {
   window.location.href = mailtoLink;
 });
 
+console.log("me&u")
 // make it show each city's local time instead
