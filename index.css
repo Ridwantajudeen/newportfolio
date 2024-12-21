@@ -47,6 +47,7 @@ button {
   border: 1px solid #ccc;
   padding: 20px;
   margin-top: 10px;
+  
 }
 
 #pro-title {
@@ -69,6 +70,14 @@ ul {
   justify-content: space-between;
   text-align: center;
   list-style-type: none;
+  
+ 
+}
+.projects{
+ 
+
+overflow: hidden scroll;
+ 
 }
 
 #pro-a {

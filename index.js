@@ -23,8 +23,21 @@ function showPage(pageId) {
         content = `
         <div class="card">
           <h2>Projects</h2>
-         
-          <ul>
+        
+          <ul >
+           
+            <li><div >
+            <h1>Food delivery</h1>
+            <image id="pro-img" src="images/motion.png"/><br>
+            <a id="pro-a" href="https://motion-vert.vercel.app/">View Project</a>
+            </div>
+            </li>
+            <li><div >
+            <h1>Edu Website</h1>
+            <image id="pro-img" src="images/oonion.png"/><br>
+            <a id="pro-a" href="https://onion-ten.vercel.app/">View Project</a>
+            </div>
+            </li>
             <li><div >
             <h1>Fintech App</h1>
             <image id="pro-img" src="images/fintech.png"/><br>
@@ -38,13 +51,7 @@ function showPage(pageId) {
             <a id="pro-a" href="https://ridwantajudeen.github.io/to-do-list/">View Project</a>
             </div>
             </li>
-            <li>
-            <div>
-            <h1>Salon Page</h1>
-            <image id="pro-img" src="images/emrald.png"/><br>
-            <a id="pro-a" href="https://fintech-app-8y8f.vercel.app/">View Project</a>
-            </div>
-            </li>
+           
             <li>
             <div>
             <h1>Weather App</h1>
@@ -52,7 +59,9 @@ function showPage(pageId) {
             <a id="pro-a" href="https://ridwantajudeen.github.io/weather-app/">View Project</a>
             </div>
             </li>
+           
           </ul>
+         
         </div>`;
     } else if (pageId === 'page2') {
         content = `
