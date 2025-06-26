@@ -1,40 +1,56 @@
-const textElement = document.getElementById('typing-text');
-const textToType = "Hello, My name is Ridwan Tajudeen.\nI am a Knowledgeable Front End Web Developer adept at creating successful websites\nthat meet User's needs.  produce plans and improve designs for usability and functionality.";
+const textElement = document.getElementById("typing-text");
+const textToType =
+  "Hello, My name is Ridwan Tajudeen.\nI am a Knowledgeable Front End Web Developer adept at creating successful websites\nthat meet User's needs.  produce plans and improve designs for usability and functionality.";
 let charIndex = 0;
 
 function type() {
-    const text = textToType.slice(0, ++charIndex);
-    textElement.textContent = text;
-    if (charIndex < textToType.length) {
-        setTimeout(type, 70);
-    }
+  const text = textToType.slice(0, ++charIndex);
+  textElement.textContent = text;
+  if (charIndex < textToType.length) {
+    setTimeout(type, 70);
+  }
 }
 
 window.onload = function () {
-    type();
-    showPage('page1'); // Display 'Projects' content by default
+  type();
+  showPage("page1"); // Display 'Projects' content by default
 };
 
 function showPage(pageId) {
-    const contentContainer = document.getElementById('content-container');
-    let content;
+  const contentContainer = document.getElementById("content-container");
+  let content;
 
-    if (pageId === 'page1') {
-        content = `
+  if (pageId === "page1") {
+    content = `
         <div class="card">
           <h2>Projects</h2>
         
           <ul >
            
             <li><div >
-            <h1>Food delivery</h1>
-            <image id="pro-img" src="images/motion.png"/><br>
-            <a id="pro-a" href="https://motion-vert.vercel.app/">View Project</a>
+            <h1>Event planing</h1>
+            <image id="pro-img" src="images/flower.PNG"/><br>
+            <a id="pro-a" href="https://flowersinwunderland.com/">View Project</a>
             </div>
             </li>
             <li><div >
+            <h1>Kids Subscriptions</h1>
+            <image id="pro-img" src="images/littlebee.PNG"/><br>
+            <a id="pro-a" href="https://littlebeebox.com/">View Project</a>
+            </div>
+            </li>
+            <li><div >
+            <h1>Food delivery</h1>
+            <image id="pro-img" src="images/motion.PNG"/><br>
+            <a id="pro-a" href="https://motion-vert.vercel.app/">View Project</a>
+            </div>
+            </li>
+            </ul>
+            <ul>
+            <li>
+            <div >
             <h1>Edu Website</h1>
-            <image id="pro-img" src="images/oonion.png"/><br>
+            <image id="pro-img" src="images/oonion.PNG"/><br>
             <a id="pro-a" href="https://onion-ten.vercel.app/">View Project</a>
             </div>
             </li>
@@ -63,8 +79,8 @@ function showPage(pageId) {
           </ul>
          
         </div>`;
-    } else if (pageId === 'page2') {
-        content = `
+  } else if (pageId === "page2") {
+    content = `
         <div id="skills-card" class="card">
           <h2 class="skills-heading">Skills</h2>
           <div class="skills-list">
@@ -76,8 +92,8 @@ function showPage(pageId) {
           <p> <span id="the-bold"> Team Management - </span> </br> Effective coordination and leadership in a collaborative environment.</p>
           </div>
         </div>`;
-    } else if (pageId === 'page3') {
-        content = `
+  } else if (pageId === "page3") {
+    content = `
         <div class="card" id="card1">
           <h2>Contact me on:</h2>
           <p id="card-p"> <a id="card-a" href="https://github.com/Ridwantajudeen"><div id="card-p"><image src="images/github.png"/><h1 class="card-p">GitHub</h1></div</a></p>
@@ -87,19 +103,21 @@ function showPage(pageId) {
           <p id="card-p"> <a id="card-a" href="https://www.linkedin.com/in/ridwan-tajudeen/"><div id="card-p"><image src="images/linkedin.png"/><h1 class="card-p">Ridwan Tajudeen</h1></div</a></p>
           
         </div>`;
-    }
+  }
 
-    contentContainer.innerHTML = content;
+  contentContainer.innerHTML = content;
 }
 
-document.getElementById('hireButton').addEventListener('click', function () {
-  var email = 'ridwantajudeen8@gmail.com';
-  var subject = encodeURIComponent('Subject: Job Opportunity');
-  var body = encodeURIComponent('Hello,\n\nI am interested in discussing job opportunities with you. Please let me know the details.\n\nBest regards,\n[Your Name]');
+document.getElementById("hireButton").addEventListener("click", function () {
+  var email = "ridwantajudeen8@gmail.com";
+  var subject = encodeURIComponent("Subject: Job Opportunity");
+  var body = encodeURIComponent(
+    "Hello,\n\nI am interested in discussing job opportunities with you. Please let me know the details.\n\nBest regards,\n[Your Name]"
+  );
 
-  var mailtoLink = 'mailto:' + email + '?subject=' + subject + '&body=' + body;
+  var mailtoLink = "mailto:" + email + "?subject=" + subject + "&body=" + body;
   window.location.href = mailtoLink;
 });
 
-console.log("me&u")
+console.log("me&u");
 // make it show each city's local time instead
