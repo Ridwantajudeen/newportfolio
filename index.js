@@ -51,7 +51,7 @@ function showPage(pageId) {
             <div >
             <h1>Edu Website</h1>
             <image id="pro-img" src="images/oonion.PNG"/><br>
-            <a id="pro-a" href="https://onion-ten.vercel.app/">View Project</a>
+            <a id="pro-a" href="https://onions-ten.vercel.app/">View Project</a>
             </div>
             </li>
             <li><div >
