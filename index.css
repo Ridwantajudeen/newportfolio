@@ -11,19 +11,17 @@ body {
 
 #typing-text {
   display: inline-block;
-  font-size: 16px;
-  padding-right: 10px;
   font-size: large;
   font-weight: bold;
   font-family: monospace;
   color: rgb(27, 3, 27);
+  padding-right: 10px;
 }
 
 #top-image {
   border: solid rgb(27, 3, 27);
   border-radius: 100%;
   width: 100px;
-  
 }
 
 .button-container {
@@ -47,7 +45,6 @@ button {
   border: 1px solid #ccc;
   padding: 20px;
   margin-top: 10px;
-  
 }
 
 #pro-title {
@@ -59,25 +56,6 @@ button {
   height: 250px;
   border: solid rgb(27, 3, 27);
   border-radius: 20px;
-}
-
-ul {
-  border: solid rgb(27, 3, 27);
-  color: rgb(216, 197, 216);
-  border-radius: 10px;
-  background-color: rgb(27, 3, 27);
-  display: flex;
-  justify-content: space-between;
-  text-align: center;
-  list-style-type: none;
-  
- 
-}
-.projects{
- 
-
-overflow: hidden scroll;
- 
 }
 
 #pro-a {
@@ -109,63 +87,101 @@ overflow: hidden scroll;
   display: flex;
 }
 
-#the-bold{
-  
+#the-bold {
   font-weight: 550;
 }
-#card-a{
-  color:rgb(27, 3, 27) ;
+
+#card-a {
+  color: rgb(27, 3, 27);
   text-decoration: none;
-font-weight:bolder;
+  font-weight: bolder;
   margin-top: 10px;
   display: flex;
   align-items: center;
-  
 }
 
-#card-p{
+#card-p {
   display: flex;
   align-items: center;
   justify-content: center;
-
 }
-.card-p{
+
+.card-p {
   margin-left: 10px;
   margin-right: 30px;
 }
 
-#hireButton{
+#hireButton {
   text-align: center;
   background-color: rgb(27, 3, 27);
   color: rgb(216, 197, 216);
   width: 250px;
-height: 65px;
-font-size: larger;
-font-weight: bolder;
-border: solid rgb(27, 3, 27);
-border-radius: 10px;
+  height: 65px;
+  font-size: larger;
+  font-weight: bolder;
+  border: solid rgb(27, 3, 27);
+  border-radius: 10px;
 }
-#hireButton:hover{
+
+#hireButton:hover {
   width: 300px;
   height: 70px;
   border: white;
 }
-.hire-btn{
+
+.hire-btn {
   text-align: right;
 }
 
-@media screen and (max-width:700px){
+
+.projects-container {
+  max-width: 90%; 
+  margin: 0 auto;
+  overflow-x: auto;
+  overflow-y: hidden;
+  padding: 10px 0;
+  scrollbar-width: none; 
+}
+
+.projects-container::-webkit-scrollbar {
+  display: none; 
+}
+
+.projects {
+  display: flex;
+  gap: 1rem;
+  list-style: none;
+  padding: 0;
+  margin: 0;
+}
+
+.projects li {
+  flex: 0 0 180px;
+}
+
+.projects li div {
+  background-color: rgb(27, 3, 27);
+  color: rgb(216, 197, 216);
+  border-radius: 10px;
+  padding: 10px;
+  text-align: center;
+}
+
+.projects img {
+  width: 100%;
+  height: auto;
+  border-radius: 10px;
+  border: 2px solid rgb(216, 197, 216);
+}
+
+@media screen and (max-width: 700px) {
   ul {
-    border: solid rgb(27, 3, 27);
-    color: rgb(216, 197, 216);
-    border-radius: 10px;
-    background-color: rgb(27, 3, 27);
     display: block;
     justify-content: space-between;
     text-align: center;
     list-style-type: none;
-    height: 500px;
-    overflow: hidden scroll;
+    height: auto;
+    overflow: visible;
   }
 
   .skills-list {
@@ -174,26 +190,30 @@ border-radius: 10px;
     display: block;
   }
 
-  #card-a{
-    color:rgb(27, 3, 27) ;
+  #card-a {
+    color: rgb(27, 3, 27);
     text-decoration: none;
-  font-weight:bolder;
+    font-weight: bolder;
     margin-top: 10px;
     display: flex;
     align-items: center;
-    
   }
-  
-  #card-p{
+
+  #card-p {
     display: block;
     align-items: center;
     justify-content: center;
-  
   }
-  .hire-btn{
+
+  .hire-btn {
     text-align: center;
   }
-  
+
+  .projects {
+    display: block;
+  }
+
+  .projects li {
+    margin-bottom: 1rem;
+  }
 }
-
-

@@ -13,7 +13,7 @@ function type() {
 
 window.onload = function () {
   type();
-  showPage("page1"); // Display 'Projects' content by default
+  showPage("page1"); 
 };
 
 function showPage(pageId) {
@@ -22,63 +22,65 @@ function showPage(pageId) {
 
   if (pageId === "page1") {
     content = `
-        <div class="card">
-          <h2>Projects</h2>
-        
-          <ul >
-           
-            <li><div >
-            <h1>Event planing</h1>
-            <image id="pro-img" src="images/flower.PNG"/><br>
-            <a id="pro-a" href="https://flowersinwunderland.com/">View Project</a>
-            </div>
-            </li>
-            <li><div >
-            <h1>Kids Subscriptions</h1>
-            <image id="pro-img" src="images/littlebee.PNG"/><br>
+    <div class="card">
+      <h2>Projects</h2>
+      <div class="projects-container">
+      <ul class="projects">
+      <li>
+      
+          <div>
+            <h3>Kids Subscriptions</h3>
+            <img id="pro-img" src="images/littlebee.PNG"/><br>
             <a id="pro-a" href="https://littlebeebox.com/">View Project</a>
-            </div>
-            </li>
-            <li><div >
-            <h1>Food delivery</h1>
-            <image id="pro-img" src="images/motion.PNG"/><br>
-            <a id="pro-a" href="https://motion-vert.vercel.app/">View Project</a>
-            </div>
-            </li>
-            </ul>
-            <ul>
-            <li>
-            <div >
-            <h1>Edu Website</h1>
-            <image id="pro-img" src="images/oonion.PNG"/><br>
+          </div>
+        </li>
+        <li>
+          <div>
+            <h3>Edu Website</h3>
+            <img id="pro-img" src="images/oonion.PNG"/><br>
             <a id="pro-a" href="https://onions-ten.vercel.app/">View Project</a>
-            </div>
-            </li>
-            <li><div >
-            <h1>Fintech App</h1>
-            <image id="pro-img" src="images/fintech.png"/><br>
+          </div>
+        </li>
+        <li>
+          <div>
+            <h3>Event Planning</h3>
+            <img id="pro-img" src="images/flower.PNG"/><br>
+            <a id="pro-a" href="https://flowersinwunderland.com/">View Project</a>
+          </div>
+        </li>
+        
+        <li>
+          <div>
+            <h3>Food Delivery</h3>
+            <img id="pro-img" src="images/motion.PNG"/><br>
+            <a id="pro-a" href="https://motion-vert.vercel.app/">View Project</a>
+          </div>
+        </li>
+        
+        <li>
+          <div>
+            <h3>Fintech App</h3>
+            <img id="pro-img" src="images/fintech.png"/><br>
             <a id="pro-a" href="https://fintech-app-8y8f.vercel.app/">View Project</a>
-            </div>
-            </li>
-            <li>
-            <div>
-            <h1>A To-Do list App</h1>
-            <image id="pro-img" src="images/todo.png"/><br>
+          </div>
+        </li>
+        <li>
+          <div>
+            <h3>To-Do List App</h3>
+            <img id="pro-img" src="images/todo.png"/><br>
             <a id="pro-a" href="https://ridwantajudeen.github.io/to-do-list/">View Project</a>
-            </div>
-            </li>
-           
-            <li>
-            <div>
-            <h1>Weather App</h1>
-            <image id="pro-img" src="images/weather.jpg"/><br>
+          </div>
+        </li>
+        <li>
+          <div>
+            <h3>Weather App</h3>
+            <img id="pro-img" src="images/weather.jpg"/><br>
             <a id="pro-a" href="https://ridwantajudeen.github.io/weather-app/">View Project</a>
-            </div>
-            </li>
-           
-          </ul>
-         
-        </div>`;
+          </div>
+        </li>
+      </ul>
+      </div>
+    </div>`;
   } else if (pageId === "page2") {
     content = `
         <div id="skills-card" class="card">
@@ -96,12 +98,11 @@ function showPage(pageId) {
     content = `
         <div class="card" id="card1">
           <h2>Contact me on:</h2>
-          <p id="card-p"> <a id="card-a" href="https://github.com/Ridwantajudeen"><div id="card-p"><image src="images/github.png"/><h1 class="card-p">GitHub</h1></div</a></p>
-          <p id="card-p"> <a id="card-a" href="mailto:ridwantajudeen8@gmail.com"><div id="card-p"><image src="images/email.png"/><h1 class="card-p">Email</h1></div</a></p>
-          <p id="card-p"> <a id="card-a" href="tel:+2348163422787"><div id="card-p"><image src="images/phone.png"/><h1 class="card-p">+2348163422787</h1></div</a></p>
-          <p id="card-p"> <a id="card-a" href="https://twitter.com/Ritajtimi"><div id="card-p"><image src="images/twitter.png"/><h1 class="card-p">@ritajtimi</h1></div</a></p>
-          <p id="card-p"> <a id="card-a" href="https://www.linkedin.com/in/ridwan-tajudeen/"><div id="card-p"><image src="images/linkedin.png"/><h1 class="card-p">Ridwan Tajudeen</h1></div</a></p>
-          
+          <p id="card-p"> <a id="card-a" href="https://github.com/Ridwantajudeen"><div id="card-p"><img src="images/github.png"/><h1 class="card-p">GitHub</h1></div></a></p>
+          <p id="card-p"> <a id="card-a" href="mailto:ridwantajudeen8@gmail.com"><div id="card-p"><img src="images/email.png"/><h1 class="card-p">Email</h1></div></a></p>
+          <p id="card-p"> <a id="card-a" href="tel:+2348163422787"><div id="card-p"><img src="images/phone.png"/><h1 class="card-p">+2348163422787</h1></div></a></p>
+          <p id="card-p"> <a id="card-a" href="https://twitter.com/Ritajtimi"><div id="card-p"><img src="images/twitter.png"/><h1 class="card-p">@ritajtimi</h1></div></a></p>
+          <p id="card-p"> <a id="card-a" href="https://www.linkedin.com/in/ridwan-tajudeen/"><div id="card-p"><img src="images/linkedin.png"/><h1 class="card-p">Ridwan Tajudeen</h1></div></a></p>
         </div>`;
   }
 
@@ -120,4 +121,3 @@ document.getElementById("hireButton").addEventListener("click", function () {
 });
 
 console.log("me&u");
-// make it show each city's local time instead
