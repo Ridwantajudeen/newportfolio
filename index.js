@@ -26,6 +26,14 @@ function showPage(pageId) {
       <h2>Projects</h2>
       <div class="projects-container">
       <ul class="projects">
+
+      <li>
+          <div>
+            <h3>Escrowd</h3>
+            <img id="pro-img" src="images/escrowd.PNG"/><br>
+            <a id="pro-a" href="https://escrowd.vercel.app/">View Project</a>
+          </div>
+        </li>
       <li>
       
           <div>
@@ -41,6 +49,7 @@ function showPage(pageId) {
             <a id="pro-a" href="https://onions-ten.vercel.app/">View Project</a>
           </div>
         </li>
+        
         <li>
           <div>
             <h3>Event Planning</h3>
